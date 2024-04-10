@@ -1,0 +1,678 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Eastern Wonder - Itinerary details for Benjamin Robert</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="75f46631-51f4-4064-82de-c815c0a2b74f" class="page sans"><header><img class="page-cover-image" src="Eastern%20Wonder%20-%20Itinerary%20details%20for%20Benjamin%20Ro%2075f4663151f4406482dec815c0a2b74f/Facebook_-_Cover2x.png" style="object-position:center 79.28%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🏖️</span></div><h1 class="page-title">Eastern Wonder - Itinerary details for Benjamin Robert</h1><p class="page-description"></p></header><div class="page-body"><h1 id="4e94ce68-c07d-4d0f-aa64-7f828e2e33d9" class="">Map &amp; Itinerary</h1><hr id="f8546ae1-034d-4bd8-8317-5d8e4df8baf6"/><figure id="b73fde15-9384-49e1-a235-1e42ddebbf8a" class="image"><a href="Eastern%20Wonder%20-%20Itinerary%20details%20for%20Benjamin%20Ro%2075f4663151f4406482dec815c0a2b74f/Untitled.png"><img style="width:2032px" src="Eastern%20Wonder%20-%20Itinerary%20details%20for%20Benjamin%20Ro%2075f4663151f4406482dec815c0a2b74f/Untitled.png"/></a></figure><h1 id="dfe4a35b-3659-4340-a5a3-d87ecf733310" class="">Summary</h1><hr id="88a31f48-4555-47ac-b7ee-7d96d6dd879c"/><p id="0b378bb4-44ed-4f57-8447-0c371ccc17a5" class="">This document provides an itinerary for Santo Diogo&#x27;s trip to Madagascar. The itinerary includes details of the places to visit each day, such as Antananarivo, Palmarium Ankanin’ny Nofy, Andasibe, and Lemurs Parc. The document also includes information on accommodations, inclusions, exclusions, and pricing for the tour.</p><h1 id="d6e8b6c3-d42b-488c-ac8f-4d097826b283" class="">Day 1 : May 6 ⇒ <strong> Arrival (Welcoming + transfer to the hotel)</strong></h1><hr id="69107441-b792-45c4-ba16-cc8de08b7347"/><p id="da1db130-3ee0-4f62-91e5-f64dd9e67d2e" class="">Upon your arrival at the Ivato International Airport in Antananarivo (Tana in short), you&#x27;ll receive a warm welcome. After clearing customs, a friendly guide will greet you and facilitate your transfer to your Hotel</p><p id="3115dbc6-bcc9-485e-b3e6-b77e4355fdc5" class=""><strong>Overnight : Grand Urban Hotel </strong>★★★  </p><figure id="c7e5ced3-9503-403e-b972-ffc96d783271" class="image"><a href="Eastern%20Wonder%20-%20Itinerary%20details%20for%20Benjamin%20Ro%2075f4663151f4406482dec815c0a2b74f/Untitled.jpeg"><img style="width:708px" src="Eastern%20Wonder%20-%20Itinerary%20details%20for%20Benjamin%20Ro%2075f4663151f4406482dec815c0a2b74f/Untitled.jpeg"/></a></figure><h1 id="e313598f-ceed-4187-90e2-a519da9cfb85" class=""><strong>Day 2 </strong>: May 7<strong> </strong>⇒ <strong>Antananarivo - Palmarium Ankanin’ny Nofy </strong>  </h1><hr id="3a8e7c5f-380e-4603-b5cd-0c2cfbb2b0a2"/><p id="57c982a9-2ec3-49db-9000-fb8774172b7e" class="">Set off for a long drive to Ankanin’ny Nofy (also called Palmarium) settled along the man-made Lake Rasoabe along the waterway called the Canal of Pangalanes. Arriving at Manambato, we depart to Palmarium in a speed boat taking roughly an hour.</p><p id="74e54243-c1ca-497e-b15c-a35d59c3775c" class=""><strong>Overnight : Palmarium Lodge </strong>★★★</p><figure id="906f4987-5e3c-49e8-8dd8-3c0340ff8699" class="image"><a href="Eastern%20Wonder%20-%20Itinerary%20details%20for%20Benjamin%20Ro%2075f4663151f4406482dec815c0a2b74f/Untitled%201.jpeg"><img style="width:708px" src="Eastern%20Wonder%20-%20Itinerary%20details%20for%20Benjamin%20Ro%2075f4663151f4406482dec815c0a2b74f/Untitled%201.jpeg"/></a></figure><h1 id="96eb5d2f-81cb-4da2-ba05-f72590fc3122" class=""><strong>Day 3 </strong>: May 8<strong> ⇒  Palmarium Ankanin’ny Nofy</strong></h1><hr id="a67a29ad-7156-4ac8-86d0-2f0e43f56e24"/><p id="7f0db32f-d603-4abf-9979-9ea04ca17d49" class="">Palmarium has a reserve where some species of lemurs are found there. This is the best place to see the aye-aye and other species of animals. Beside, Palmarium is a haven for relaxation, with its pretty seaside and lush green vegetation. You will surely enjoy the visit walking through the forest while accompanied by your local guide who will help you spot as many animals as possible. A group of indri, sifakas, red lemurs, black lemurs, crowned lemurs and black and white ruffed lemurs can be observed easily.</p><p id="e8ec4576-3ec8-4c17-ba39-23c61ed0938a" class=""><strong>Overnight : Palmarium Lodge </strong>★★★</p><figure id="e5306437-3343-45c9-bd98-6dcebb8b2769" class="image"><a href="Eastern%20Wonder%20-%20Itinerary%20details%20for%20Benjamin%20Ro%2075f4663151f4406482dec815c0a2b74f/Untitled%202.jpeg"><img style="width:708px" src="Eastern%20Wonder%20-%20Itinerary%20details%20for%20Benjamin%20Ro%2075f4663151f4406482dec815c0a2b74f/Untitled%202.jpeg"/></a></figure><h1 id="212fa311-aa56-42f8-b17b-346b634b81c5" class=""><strong>Day 4 </strong>: May 9<strong> ⇒  Palmarium Ankanin’ny Nofy - Andasibe</strong></h1><hr id="0acc9609-66f7-496d-81dd-29da06cb519a"/><p id="bf3e098c-a466-4a1b-ba6b-8443ba9afd2c" class="">After breakfast, embark on a fast motor boat heading to Andasibe national park. In the afternoon, visit the famous Vakona Reserve where five species of lemurs such as the black and white ruffed lemur, the browns, the ring-tails, the modest eastern bamboo lemur and the diademed sifaka can be seen easily.</p><p id="9b70ff5c-b6e1-4e94-aaee-0330454623a1" class=""><strong>Overnight : Andasibe Cyperus Hotel </strong>★★★  </p><figure id="cba62f78-7a22-4b51-885b-21bdfffe891e" class="image"><a href="Eastern%20Wonder%20-%20Itinerary%20details%20for%20Benjamin%20Ro%2075f4663151f4406482dec815c0a2b74f/Untitled%203.jpeg"><img style="width:708px" src="Eastern%20Wonder%20-%20Itinerary%20details%20for%20Benjamin%20Ro%2075f4663151f4406482dec815c0a2b74f/Untitled%203.jpeg"/></a></figure><h1 id="000a567f-77dc-4783-ac4e-cfaa09e24833" class=""><strong>Day 5 </strong>: May 10<strong> ⇒  Andasibe (Analamazaotra parc visit)</strong></h1><hr id="a0256a73-00b8-4fbc-a945-c5e8800c3188"/><p id="1f1ab8b0-db05-4ae7-9aaf-6101256c45f5" class="">We set off for a morning visit at Analamazoatra reserve, home of the biggest lemur, ‘Indri’. Besides, this reserve certainly grants lots of photo opportunities seeing various animals, birds, and reptiles like the Parson chameleon, the tiny ground chameleon, and other species of lemurs. Safari night walk (as extra) in search of night active animals including mouse lemurs, fat-tailed dwarf lemurs, eastern wooly lemurs, smallest chameleons, and so forth.</p><p id="3ca4f805-347c-4ede-843a-21a5c4a7b495" class=""><strong>Overnight : Andasibe Cyperus Hotel </strong>★★★  </p><figure id="e148688f-70d6-4009-8157-3fdf6a1212dd" class="image"><a href="Eastern%20Wonder%20-%20Itinerary%20details%20for%20Benjamin%20Ro%2075f4663151f4406482dec815c0a2b74f/Untitled%204.jpeg"><img style="width:708px" src="Eastern%20Wonder%20-%20Itinerary%20details%20for%20Benjamin%20Ro%2075f4663151f4406482dec815c0a2b74f/Untitled%204.jpeg"/></a></figure><h1 id="f9b455bd-ba28-45e3-9594-30138c8142bb" class=""><strong>Day 6 </strong>: May 11<strong> ⇒ Drive back from Andasibe to Antananarivo</strong></h1><hr id="4c71e634-ab05-4b12-946b-78daaae98145"/><p id="1b8947de-5553-45e9-bd9e-4d2a0594b2ef" class="">We head back to Tana, with stops en route along this eastern mountainous road. Then, upon arrival, continue for an afternoon city tour visiting the upper town and lower town in downtown Tana, including the queen palaces, the old picturesque cathedral and then the lake Anosy.</p><p id="1d3771d2-490b-4632-b76e-48c4ac94ffe6" class=""><strong>Overnight : Grand Urban Hotel </strong>★★★ </p><figure id="63d9e655-266b-4c0c-97a6-764366826406" class="image"><a href="Eastern%20Wonder%20-%20Itinerary%20details%20for%20Benjamin%20Ro%2075f4663151f4406482dec815c0a2b74f/Untitled%205.jpeg"><img style="width:708px" src="Eastern%20Wonder%20-%20Itinerary%20details%20for%20Benjamin%20Ro%2075f4663151f4406482dec815c0a2b74f/Untitled%205.jpeg"/></a></figure><p id="b2f1cc6b-2cf8-4ba6-bebb-5ccdc8170321" class="">
+</p><h1 id="9348d60b-3edc-4873-922a-adf3acbf58da" class=""><strong>Day 7 </strong>: May 12 ⇒ <strong> City Tour + Transfer to the airport</strong></h1><hr id="dcf32fda-56b8-4658-b436-57a56db1f46c"/><p id="32d601bf-4cf5-448a-b5c8-b67f250a293e" class=""><strong>If your flight is in the afternoon (3pm - 4pm - 5pm or later)</strong></p><p id="14011da7-6696-420c-abc4-20c5326582c0" class=""><strong>Before transferring you to the airport, we offer you a city tour, followed by a visit to the photography museum</strong></p><p id="a4c03d25-a1d4-4ec7-9dee-90a8ad0a4e4f" class="">Transfer to the airport for your flight taking you back home. </p><p id="23bee71a-8ed5-41ca-901e-cc4a8a28f2fd" class=""><strong>End of our service.</strong></p><figure id="4efc2508-46cf-4d32-93b3-d496574c8958" class="image"><a href="Eastern%20Wonder%20-%20Itinerary%20details%20for%20Benjamin%20Ro%2075f4663151f4406482dec815c0a2b74f/Untitled%206.jpeg"><img style="width:708px" src="Eastern%20Wonder%20-%20Itinerary%20details%20for%20Benjamin%20Ro%2075f4663151f4406482dec815c0a2b74f/Untitled%206.jpeg"/></a></figure><h1 id="6e6f5742-ead0-4326-8258-8d51fe61ffa5" class="">Inclusions</h1><hr id="708d30f9-30ef-4f6a-b201-5348dcb481f6"/><p id="a23d3a06-5ae5-4054-af81-03588b90434d" class="">1/ Accommodations in the Hotel + Breakfast every mornings</p><p id="e1f05d22-1929-4d86-a9e5-ead8545a6d51" class="">2/ 4x4 Car + Fuel During the tour </p><p id="029c426d-1bd1-42b5-ac71-ff50e5169e26" class="">3/ Licensed English driver guide during the tour</p><p id="d05f4ad4-7d57-45e3-86d2-092e0b96f5be" class="">4/ Local guides fees</p><p id="9ddc15a1-5a94-46b5-9413-1aba89251871" class="">5/ Park tickets entry fees</p><p id="d6c56205-706a-4a31-8c03-a5884a97e880" class="">6/ Transfert to from Airport - Hotel</p><p id="071666ea-9940-4df5-9960-37ff2b840984" class="">7/ Speed boat fees</p><h1 id="70cf9c1c-56bd-4651-929a-51452b59608f" class=""><strong>Exclusions</strong></h1><hr id="dad1e5ec-f353-40ae-ad03-9a28a9fd485d"/><p id="de928d05-edc1-4a5a-8bdd-bcd4333900e1" class="">1/ Dinners &amp; Lunches<strong> (Maximum $15 per meal)</strong></p><p id="4dd7fa81-984f-48d8-940e-c992afdcc292" class="">2/ Personal spending, drinks, dinner and lunches</p><p id="abb25e99-2840-45d9-adfd-b0bd821731d8" class="">3/ Gratuities for the local team</p><h1 id="39bf6dcb-1a63-476a-9ec8-ada130f6e2f0" class="">Useful informations</h1><hr id="89e9a8d0-b1e3-467f-a9e5-55ed736f9256"/><h3 id="7bdacf43-1967-42af-990a-dbb68e8a7d56" class="">Recommended travel equipment </h3><hr id="39d0258b-1d01-4813-9778-1ad44a8fc9fb"/><ul id="7da351be-9859-4f57-9661-d5463a86861c" class="bulleted-list"><li style="list-style-type:disc">Passport, flight information, means of payment</li></ul><ul id="8a737318-c3ca-4610-9841-0dd8ab5d1303" class="bulleted-list"><li style="list-style-type:disc">Photocopies of key documents (keep them separate from the originals)</li></ul><ul id="9d4fd556-0c7e-419e-a624-f10e9d50933f" class="bulleted-list"><li style="list-style-type:disc">Travel bag/backpack/suitcase daypack</li></ul><ul id="cf2ba289-3787-448e-897c-fdfa9622d065" class="bulleted-list"><li style="list-style-type:disc">Light summer clothing, preferably a cotton sweater</li></ul><ul id="54355254-77cd-4ca9-939d-c1e4fc294e44" class="bulleted-list"><li style="list-style-type:disc">Swimwear</li></ul><ul id="da7b03f6-1fc2-46d9-a3a8-1fc152230172" class="bulleted-list"><li style="list-style-type:disc">Sun protection</li></ul><ul id="db6d248e-92ee-4351-a56a-d5a3072cf72f" class="bulleted-list"><li style="list-style-type:disc">First aid kit, personal medication, insect</li></ul><ul id="2a3d4379-ac2d-475c-91ee-3c6eed5a6920" class="bulleted-list"><li style="list-style-type:disc">Flashlight/headlamp, spare batteries for photographic equipment, films, spare batteries and spare batteries for binoculars</li></ul><h3 id="9e13dcaa-7cc4-447f-9b14-9426f24c37c5" class=""><strong>Money and credit cards</strong></h3><hr id="7095383b-ad34-4969-9f59-268d36e2a0f9"/><p id="7183b3bc-92cf-4928-8ccc-1a996b06dcbe" class=""><strong>Understanding Money in Madagascar:</strong></p><ul id="ba9996c8-23cb-484f-9440-e56a54dbb8c2" class="bulleted-list"><li style="list-style-type:disc"><strong>Currency:</strong> The Malagasy currency is the Ariary (MGA), divided into 5 Iraimbilanja.</li></ul><ul id="2904e469-0165-4daf-8a75-43d6a149d928" class="bulleted-list"><li style="list-style-type:disc"><strong>Availability:</strong> Ariary is primarily available at local banks, official exchange offices in hotels, and the airport in Antananarivo.</li></ul><ul id="aa771030-589b-4a7a-b5d1-6aa642cd86c9" class="bulleted-list"><li style="list-style-type:disc"><strong>Recommendation:</strong> We suggest bringing cash in Euros (EUR), British Pounds (GBP), or US Dollars (USD) for exchange. <strong>Tip:</strong> Exchanging a small amount (200-350 EUR) for Ariary upon arrival at the airport is convenient. You can exchange more throughout your trip as needed. Remember, leftover Ariary cannot be converted back to foreign currency, so exchange smaller amounts at a time. <strong>Important:</strong> Avoid black markets for currency exchange.</li></ul><p id="d66121ea-3fe1-405e-afe7-ca2adeb9d776" class=""><strong>Credit Cards:</strong></p><ul id="fbdbc103-c7a3-4f5b-8c79-121990d3c760" class="bulleted-list"><li style="list-style-type:disc"><strong>Limited Use:</strong> Credit cards are only accepted in some hotels, primarily in major cities like the capital (Antananarivo) and provincial capitals.</li></ul><ul id="9ac7440f-e3ed-4b26-a79d-e0b73aead2cb" class="bulleted-list"><li style="list-style-type:disc"><strong>Fees Apply:</strong> Using your credit card may incur fees depending on your bank.</li></ul><ul id="3ec66af6-2923-4405-a304-e513daef1a10" class="bulleted-list"><li style="list-style-type:disc"><strong>ATMs:</strong> Withdrawing cash from ATMs is possible at major banks, but ATMs are not widely available, especially in rural areas.</li></ul><p id="e5c2d38a-6ebc-4abe-9569-81fb14cc6c8d" class=""><strong>Bottom Line:</strong> Cash is king in Madagascar, especially outside major cities. Plan to use cash for most purchases.</p><h3 id="302beb3c-3518-4598-a5ef-159ee07ff938" class=""><strong>Visa Requirements</strong></h3><hr id="4d0208d7-bec7-483a-a7de-21fbdef1146f"/><p id="9a8c5919-838f-4ee2-b465-43eefd302331" class="">For stays in Madagascar, a short-term visa is required. Here&#x27;s a breakdown of the cost:</p><ul id="d2fd6495-009b-4b11-8892-4119a1a6ebd1" class="bulleted-list"><li style="list-style-type:disc"><strong>Less than 15 days:</strong> €10 (administrative fee)</li></ul><ul id="31c2c532-c9a0-4f4c-be78-1e1c4a1c060f" class="bulleted-list"><li style="list-style-type:disc"><strong>More than 15 days:</strong> €35 (visa fee)</li></ul><p id="2f46da2f-7500-4696-87a3-85b8cbcbd2f6" class=""><strong>Obtaining Your Visa:</strong></p><p id="f00d18bc-29d0-4538-85f3-40f2798f32d8" class="">There are two convenient ways to secure your visa:</p><ol type="1" id="599db51e-4c09-4524-8f33-a59bb628b2f8" class="numbered-list" start="1"><li><strong>Apply Online:</strong> This is the recommended option to avoid any potential delays upon arrival. <strong>Visit the official government website:  </strong><strong><a href="https://evisamada-mg.com/en/home">https://evisamada-mg.com/en/home</a></strong></li></ol><ol type="1" id="9d2eef10-2ee8-4275-8b9c-c08d80e2ea43" class="numbered-list" start="2"><li><strong>Visa on Arrival:</strong> Obtain your visa upon arrival at the airport immigration office by presenting your passport.</li></ol><h3 id="6b3280f7-210a-4de7-bbd4-e52aecb2389e" class="">Tips and gratuities</h3><hr id="b06c196f-d2ec-4f2d-9ccb-e833875b8ebe"/><p id="c3b01370-9be9-413e-bfd2-ab31a9768c72" class="">We believe tipping is a personal choice for each traveler. However, it&#x27;s important to understand that tipping is customary in Madagascar, where wages tend to be lower.  Consider tipping to show your appreciation for good service.</p><p id="654e12d3-25cc-43a0-aad8-3666094cdcf9" class=""><strong>Here&#x27;s a general guideline:</strong></p><ul id="60c05d8d-aa3b-4dbc-8813-0e9833681b87" class="bulleted-list"><li style="list-style-type:disc"><strong>Drivers:</strong> €5 USD per day</li></ul><ul id="8abed516-c94b-487d-9aee-54d333275a83" class="bulleted-list"><li style="list-style-type:disc"><strong>Local Guides:</strong> €3-€5 USD per day</li></ul><ul id="7c16d3f6-de72-4bce-b025-562b6742b26f" class="bulleted-list"><li style="list-style-type:disc"><strong>National Guides:</strong> $8-$10 USD per day</li></ul><ul id="4860b9df-715a-42f4-bb32-f062dfa8d3be" class="bulleted-list"><li style="list-style-type:disc"><strong>Restaurant Waiters:</strong> 10% of the bill (adjust based on service quality)</li></ul><p id="2de85e60-3a98-4d3a-a1cb-d43383b9f09a" class=""><strong>Explanation:</strong></p><ul id="ace1a27b-b5fb-4872-81a4-e6f1eb2432b5" class="bulleted-list"><li style="list-style-type:disc"><strong>Drivers:</strong> Drivers typically receive a smaller tip compared to guides.</li></ul><ul id="7d8cef12-a7e8-4428-9c97-21418f5fd707" class="bulleted-list"><li style="list-style-type:disc"><strong>Local Guides:</strong> Local guides, who might be specific to a town or region, can be tipped in this range.</li></ul><ul id="3042adb5-90fd-417b-be21-bef00b1ab6e7" class="bulleted-list"><li style="list-style-type:disc"><strong>National Guides:</strong> National guides, who are often more experienced and have broader knowledge, can receive a slightly higher tip.</li></ul><h3 id="30da14c5-57ae-4de4-8985-0cedac841682" class="">Policy on breaks during en-route travel</h3><hr id="0eadf45a-8b71-4674-84ae-9d3fec43d954"/><p id="5e090bf8-3333-4017-9c02-c3e3e3081033" class="">Our experienced guides know the perfect spots to stretch your legs, capture stunning photos, and enjoy breathtaking panoramic views, all while ensuring your safety and keeping us on schedule.  Breaks are typically 15 minutes long and strategically placed every 2 hours during travel days.</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
